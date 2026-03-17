@@ -1,6 +1,6 @@
 import arrow_icon from "../../assets/arrow_icon.png";
 import sqlimg from "../../assets/imgicon2.jpg";
-import "./BodyContent.css";
+import "./CSS/BodyContent.css";
 
 const BodyContent = () => {
   return (

@@ -1,4 +1,4 @@
-import "./Navbar.css"
+import "./CSS/Navbar.css"
 
 import icon from "../../assets/database_icon.png";
 
