@@ -34,3 +34,8 @@
     border-radius: 10px;
 
 }
+
+.navbar-main_navbar a {
+    text-decoration: none;
+    color: inherit;
+}

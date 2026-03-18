@@ -1,0 +1,19 @@
+.Header-container{
+    width: auto;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.Header-container h1{
+    font-size: 3rem;
+    color: rgb(78, 78, 78)
+}
+
+.Header-container p{
+    font-size: 1.5rem;
+    color: rgb(78, 78, 78)
+}

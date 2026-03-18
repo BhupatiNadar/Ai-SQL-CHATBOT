@@ -1,5 +1,5 @@
 import "./CSS/Navbar.css"
-
+import { Link } from "react-router-dom";
 import icon from "../../assets/database_icon.png";
 
 const Navbar = () => {
@@ -16,12 +16,24 @@ const Navbar = () => {
       </div>
       <div className="navbar-main_navbar">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Features</li>
-          <li>How it works</li>
-          <li className="navbar-chatbot-btn">chatbot</li>
-          <li>Contact</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/About">About</Link>
+          </li>
+          <li>
+            <Link to="/Features">Features</Link>
+          </li>
+          <li>
+            <Link to="/How_it_works"> How it works</Link>
+          </li>
+          <li className="navbar-chatbot-btn">
+            <Link to="/chatbot">chatbot</Link>
+          </li>
+          <li>
+            <Link to="/Contact">Contact</Link>
+          </li>
         </ul>
       </div>
     </div>
