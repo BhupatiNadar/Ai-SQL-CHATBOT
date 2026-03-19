@@ -4,6 +4,8 @@ import Workflow from "./components/Homepage/Workflow";
 import Footer from "./components/Homepage/Footer"
 import Header from "./components/Aboutme/Header"
 import AboutMeBody from "./components/Aboutme/AboutMeBody";
+import AboutMeWorkflow from "./components/Aboutme/AboutMeWorkflow";
+import AboutMeFooter from "./components/Aboutme/AboutMeFooter";
 import "./App.css"
 import { Routes,Route } from "react-router-dom";
 
@@ -29,6 +31,8 @@ function App() {
             <>
               <Header />
               <AboutMeBody />
+              <AboutMeWorkflow/>
+              <AboutMeFooter/>
             </>
           }
         />
