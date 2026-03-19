@@ -6,6 +6,9 @@ import Header from "./components/Aboutme/Header"
 import AboutMeBody from "./components/Aboutme/AboutMeBody";
 import AboutMeWorkflow from "./components/Aboutme/AboutMeWorkflow";
 import AboutMeFooter from "./components/Aboutme/AboutMeFooter";
+import FeaturesHeader from "./components/Features/FeaturesHeader";
+import FeaturesBody from "./components/Features/FeaturesBody";
+import FeathuresFooter from "./components/Features/FeathuresFooter";
 import "./App.css"
 import { Routes,Route } from "react-router-dom";
 
@@ -31,8 +34,19 @@ function App() {
             <>
               <Header />
               <AboutMeBody />
-              <AboutMeWorkflow/>
-              <AboutMeFooter/>
+              <AboutMeWorkflow />
+              <AboutMeFooter />
+            </>
+          }
+        />
+
+        <Route
+          path="/Features"
+          element={
+            <>
+            <FeaturesHeader/>
+            <FeaturesBody/>
+            <FeathuresFooter/>
             </>
           }
         />
