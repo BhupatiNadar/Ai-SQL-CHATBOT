@@ -12,6 +12,8 @@ import FeathuresFooter from "./components/Features/FeathuresFooter";
 import ContactHeader from "./components/Contact/ContactHeader";
 import ContactBody from "./components/Contact/ContactBody";
 import ContactFooter from "./components/Contact/ContactFooter";
+import How_it_workHeader from "./components/How_it_work/How_it_workHeader"
+import How_it_workBody from "./components/How_it_work/How_it_workBody"
 import "./App.css"
 import { Routes,Route } from "react-router-dom";
 
@@ -57,12 +59,21 @@ function App() {
           path="/Contact"
           element={
             <>
-            <ContactHeader/>
-            <ContactBody/>
-            <ContactFooter/>
+              <ContactHeader />
+              <ContactBody />
+              <ContactFooter />
             </>
           }
         />
+
+        <Route 
+        path="/How_it_works"
+         element={
+          <>
+          <How_it_workHeader/>
+          <How_it_workBody/>
+          </>
+      } />
       </Routes>
     </>
   );

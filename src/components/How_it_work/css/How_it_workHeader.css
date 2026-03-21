@@ -1,0 +1,15 @@
+.How_it_workHeader-mainContainer{
+    width: auto;
+    min-height: 15rem;
+    font-size: 1.5rem;
+    color: rgb(78, 78, 78);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.How_it_workHeader-mainContainer h1{
+    color: black;
+}
