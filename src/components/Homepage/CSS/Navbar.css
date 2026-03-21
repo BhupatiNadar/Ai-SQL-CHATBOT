@@ -1,16 +1,27 @@
 .navbar-container{
     width: 100%;
     height: 4rem;
+<<<<<<< HEAD
     background:linear-gradient(to top,rgb(2, 54, 113), rgb(1, 34, 73));
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid rgb(3, 41, 106);
+=======
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
     box-sizing: border-box;
     font-size: 1.5rem;
+<<<<<<< HEAD
     color: rgb(255, 255, 255);
+=======
+    color: rgb(78, 78, 78);
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
 }
 
 .navbar-icon_and_project_name{

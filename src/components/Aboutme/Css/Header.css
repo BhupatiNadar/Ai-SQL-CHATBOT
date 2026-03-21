@@ -6,15 +6,26 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
+<<<<<<< HEAD
     background: linear-gradient(to top, rgb(12, 133, 199), rgb(4, 66, 137) ,rgb(2, 54, 113));
+=======
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
 }
 
 .Header-container h1{
     font-size: 3rem;
+<<<<<<< HEAD
     color: gold;
+=======
+    color: rgb(78, 78, 78)
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
 }
 
 .Header-container p{
     font-size: 1.5rem;
+<<<<<<< HEAD
     color: goldenrod
+=======
+    color: rgb(78, 78, 78)
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
 }

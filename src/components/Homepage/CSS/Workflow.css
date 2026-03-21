@@ -1,8 +1,13 @@
 .workflow-container {
     width: 100%;
+<<<<<<< HEAD
     padding: 3rem 20rem;
     /* background: linear-gradient(to left, rgb(133, 192, 239),rgb(0, 108, 181), rgb(4, 66, 137) ,rgb(2, 54, 113)); */
     background-color: rgb(12, 133, 199);
+=======
+    padding: 4rem 2rem;
+    background-color: #f9fafb;
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,9 +15,14 @@
 
 .workflow-innercontainer1 {
     text-align: center;
+<<<<<<< HEAD
     max-width: 900px;
     margin-bottom: 32px;
     color: rgb(0, 5, 11);
+=======
+    max-width: 700px;
+    margin-bottom: 3rem;
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
 }
 
 .workflow-innercontainer1 h1 {
@@ -22,7 +32,11 @@
 
 .workflow-innercontainer1 p {
     font-size: 1.1rem;
+<<<<<<< HEAD
     color: #fff3f3;
+=======
+    color: #555;
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
 }
 
 .workflow-innercontainer2 {
@@ -37,7 +51,11 @@
     min-width: 400px;
     padding: 1.5rem;
     border-radius: 12px;
+<<<<<<< HEAD
     background: rgb(26, 164, 51);
+=======
+    background: white;
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
     border: 1px solid #e5e7eb;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -63,6 +81,10 @@
     width: 60px;
     height: 60px;
     color: white;
+<<<<<<< HEAD
     background-color: #13326c;
+=======
+    background-color: #2d57ca;
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
     border-radius: 50%;
 }

@@ -12,6 +12,11 @@ import FeathuresFooter from "./components/Features/FeathuresFooter";
 import ContactHeader from "./components/Contact/ContactHeader";
 import ContactBody from "./components/Contact/ContactBody";
 import ContactFooter from "./components/Contact/ContactFooter";
+<<<<<<< HEAD
+=======
+import How_it_workHeader from "./components/How_it_work/How_it_workHeader"
+import How_it_workBody from "./components/How_it_work/How_it_workBody"
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
 import "./App.css"
 import { Routes,Route } from "react-router-dom";
 
@@ -57,12 +62,30 @@ function App() {
           path="/Contact"
           element={
             <>
+<<<<<<< HEAD
             <ContactHeader/>
             <ContactBody/>
             <ContactFooter/>
             </>
           }
         />
+=======
+              <ContactHeader />
+              <ContactBody />
+              <ContactFooter />
+            </>
+          }
+        />
+
+        <Route 
+        path="/How_it_works"
+         element={
+          <>
+          <How_it_workHeader/>
+          <How_it_workBody/>
+          </>
+      } />
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
       </Routes>
     </>
   );

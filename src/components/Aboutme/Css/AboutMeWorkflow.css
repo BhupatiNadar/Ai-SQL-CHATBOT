@@ -7,8 +7,11 @@
     align-items: center;
     justify-content: center;
     font-size: 1.3rem;
+<<<<<<< HEAD
     background: linear-gradient(to top, rgb(12, 133, 199), rgb(27, 153, 220));
     padding-top: 50px;
+=======
+>>>>>>> f68eec84f9107a768a129139128788fe173235ce
 }
 
 .AboutMeWorkflow-innerContainer{
