@@ -1,0 +1,38 @@
+.FeaturesBody-maincontainer {
+    margin: 20px;
+    width: auto;
+    min-height: 40rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.FeaturesBody-Box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.FeaturesBody-Box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.FeaturesBody-Box h1 {
+    font-size: 27px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.FeaturesBody-Box p {
+    font-size: 17px;
+    color: #6b7280;
+    line-height: 1.6;
+}

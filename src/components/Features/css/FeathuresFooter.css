@@ -1,0 +1,56 @@
+.FeathuresFooter-footer {
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-subtitle {
+    font-size: 1rem;
+    color: #cbd5f5;
+    margin-bottom: 30px;
+}
+
+.footer-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-stat-box {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.footer-stat-box h1 {
+    font-size: 2rem;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.footer-stat-box p {
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.85rem;
+}

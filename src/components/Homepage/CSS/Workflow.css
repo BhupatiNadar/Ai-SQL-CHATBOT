@@ -1,0 +1,68 @@
+.workflow-container {
+    width: 100%;
+    padding: 3rem 20rem;
+    /* background: linear-gradient(to left, rgb(133, 192, 239),rgb(0, 108, 181), rgb(4, 66, 137) ,rgb(2, 54, 113)); */
+    background-color: rgb(12, 133, 199);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workflow-innercontainer1 {
+    text-align: center;
+    max-width: 900px;
+    margin-bottom: 32px;
+    color: rgb(0, 5, 11);
+}
+
+.workflow-innercontainer1 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.workflow-innercontainer1 p {
+    font-size: 1.1rem;
+    color: #fff3f3;
+}
+
+.workflow-innercontainer2 {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.workflow-ans {
+    min-width: 400px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: rgb(26, 164, 51);
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgb(237, 246, 250);
+}
+
+.workflow-ans:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.workflow-ans h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.workflow-ans p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #13326c;
+    border-radius: 50%;
+}
