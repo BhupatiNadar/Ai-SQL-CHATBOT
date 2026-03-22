@@ -85,3 +85,8 @@
     max-width: 500px;
     border-radius: 10px;
 }
+
+.start-btn a{
+   color: white;
+   text-decoration: none;
+}

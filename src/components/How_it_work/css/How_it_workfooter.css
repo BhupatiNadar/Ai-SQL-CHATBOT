@@ -1,0 +1,74 @@
+.workflow-container {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f5f7fb;
+    font-family: Arial, sans-serif;
+}
+
+.workflow-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1a2b49;
+    margin-bottom: 30px;
+}
+
+
+.workflow-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.workflow-card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.workflow-steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 25px;
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+    color: #5f6b7a;
+}
+
+.workflow-steps li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.blue {
+    background-color: #3b82f6;
+}
+
+.cyan {
+    background-color: #06b6d4;
+}
+
+.green {
+    background-color: #10b981;
+}
+
+.orange {
+    background-color: #f59e0b;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #7a8594;
+}

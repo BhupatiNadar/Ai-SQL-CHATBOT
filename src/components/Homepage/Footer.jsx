@@ -1,7 +1,7 @@
 import React from "react";
 import arrow_icon from "../../assets/arrow_icon.png";
 import "./CSS/Footer.css";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer">
@@ -13,7 +13,7 @@ const Footer = () => {
           </p>
 
           <button className="footer-btn" type="button">
-            Try the Chatbot Now
+            <Link to="/chatbot">Try the Chatbot Now </Link>
             <img className="footer-icon" src={arrow_icon} alt="arrow icon" />
           </button>
         </div>

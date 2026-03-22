@@ -1,16 +1,14 @@
 import arrow_icon from "../../assets/arrow_icon.png";
 import sqlimg from "../../assets/imgicon2.jpg";
 import "./CSS/BodyContent.css";
-
+import { Link } from "react-router-dom";
 const BodyContent = () => {
   return (
     <div className="body-container">
       <div className="body-context">
         <span>✰ AI-Powered SQL Assistant</span>
 
-        <h1>
-          AI-Based SQL Chatbot for Live  Databases
-        </h1>
+        <h1>AI-Based SQL Chatbot for Live Databases</h1>
 
         <h3>
           Transform natural language questions into SQL queries instantly. Query
@@ -20,7 +18,7 @@ const BodyContent = () => {
         <div className="body-button">
           <ul>
             <li className="start-btn">
-              Start SQL Query
+              <Link to="/chatbot"> Start SQL Query</Link>
               <img
                 className="body-arrow_icon"
                 src={arrow_icon}

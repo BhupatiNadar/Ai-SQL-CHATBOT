@@ -14,6 +14,8 @@ import ContactBody from "./components/Contact/ContactBody";
 import ContactFooter from "./components/Contact/ContactFooter";
 import How_it_workHeader from "./components/How_it_work/How_it_workHeader"
 import How_it_workBody from "./components/How_it_work/How_it_workBody"
+import How_it_workfooter from "./components/How_it_work/How_it_workfooter";
+import Chatbot from "./components/Chatbot/Chatbot";
 import "./App.css"
 import { Routes,Route } from "react-router-dom";
 
@@ -66,14 +68,27 @@ function App() {
           }
         />
 
-        <Route 
-        path="/How_it_works"
-         element={
-          <>
-          <How_it_workHeader/>
-          <How_it_workBody/>
-          </>
-      } />
+        <Route
+          path="/How_it_works"
+          element={
+            <>
+              <How_it_workHeader />
+              <How_it_workBody />
+              <How_it_workfooter />
+            </>
+          }
+        />
+
+        <Route
+          path="/Chatbot"
+          element={
+            <>
+              <Chatbot/>
+            </>
+          }
+        />
+
+
       </Routes>
     </>
   );
