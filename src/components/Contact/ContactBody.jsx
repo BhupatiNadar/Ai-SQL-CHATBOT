@@ -1,7 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./css/ContactBody.css";
 
 const ContactBody = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async () => {
+    try {
+      const res = await axios.post("http://127.0.0.1:8000/contact", formData);
+
+      console.log(res.data);
+      alert("Message sent successfully!");
+      
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Error sending message");
+    }
+  };
+
   return (
     <div className="contact-container">
       <div className="contact-wrapper">
@@ -9,15 +41,32 @@ const ContactBody = () => {
           <h1>Send us a Message</h1>
 
           <label>Name</label>
-          <input type="text" placeholder="Your Name" />
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Your Name"
+          />
 
           <label>Email</label>
-          <input type="text" placeholder="your.email@example.com" />
+          <input
+            type="text"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="your.email@example.com"
+          />
 
           <label>Message</label>
-          <textarea placeholder="Tell us what you think or ask us a question"></textarea>
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Tell us what you think or ask us a question"
+          ></textarea>
 
-          <button>Send Message</button>
+          <button onClick={handleSubmit}>Send Message</button>
         </div>
 
         <div className="contact-info">
