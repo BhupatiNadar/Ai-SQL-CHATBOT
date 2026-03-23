@@ -1,8 +1,39 @@
 import React from "react";
 import "./css/Chatbot.css";
 import send from "../../assets/send.png";
+import { useState } from "react";
+import axios from "axios";
 
 const Chatbot = () => {
+  const [user_input, set_user_input] = useState({ user_input :""});
+  const [response,setresponse]=useState("")
+
+  const handlechange_input=(e)=>{
+    set_user_input({
+      ...user_input,
+      [e.target.name] : e.target.value
+    });
+  };
+
+   const handleSubmit = async () => {
+     try {
+       const res = await axios.post(
+         "http://127.0.0.1:8000/Sql_Chatbot",
+         user_input,
+       );
+
+       setresponse(res.data.query)
+       alert("Message sent successfully!");
+
+       set_user_input({
+         user_input: "",
+       });
+     } catch (error) {
+       console.error(error);
+       alert("Error sending message");
+     }
+   };
+
   return (
     <>
       <div className="Connection-database"></div>
@@ -17,9 +48,12 @@ const Chatbot = () => {
           <div className="input-box">
             <input
               type="text"
+              name="user_input"
+              value={user_input.user_input}
               placeholder="Ask a question about your database..."
+              onChange={handlechange_input}
             />
-            <button>
+            <button onClick={handleSubmit}>
               <img src={send} alt="send" />
             </button>
           </div>
@@ -30,7 +64,9 @@ const Chatbot = () => {
             <h2>Generated SQL Query</h2>
             <p className="sub-text">AI-generated SQL based on your question</p>
             <div className="placeholder">
-              SQL query will appear here after you ask a question
+              {response
+                ? response
+                : "SQL query will appear here after you ask a question"}
             </div>
           </div>
 
