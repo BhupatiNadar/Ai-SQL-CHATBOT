@@ -5,9 +5,7 @@ import send from "../../assets/send.png";
 const Chatbot = () => {
   return (
     <>
-      <div className="Connection-database">
-        
-      </div>
+      <div className="Connection-database"></div>
       <div className="chatbot-container">
         <div className="chat-box">
           <div>
