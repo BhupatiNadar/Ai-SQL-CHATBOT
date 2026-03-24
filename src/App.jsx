@@ -16,6 +16,7 @@ import How_it_workHeader from "./components/How_it_work/How_it_workHeader"
 import How_it_workBody from "./components/How_it_work/How_it_workBody"
 import How_it_workfooter from "./components/How_it_work/How_it_workfooter";
 import Chatbot from "./components/Chatbot/Chatbot";
+import Documentaion from "./components/docsfolder/Documentaion";
 import "./App.css"
 import { Routes,Route } from "react-router-dom";
 
@@ -83,12 +84,19 @@ function App() {
           path="/Chatbot"
           element={
             <>
-              <Chatbot/>
+              <Chatbot />
             </>
           }
         />
 
-
+        <Route
+          path="/docs"
+          element={
+            <>
+              <Documentaion />
+            </>
+          }
+        />
       </Routes>
     </>
   );

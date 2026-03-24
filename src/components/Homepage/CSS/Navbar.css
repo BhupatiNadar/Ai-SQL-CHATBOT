@@ -18,6 +18,9 @@
     align-items: center;
     gap: 10px;
 }
+.navbar-icon_and_project_name h2{
+    font-size: 2rem;
+}
 
 .navbar-main_navbar ul{
     list-style: none;

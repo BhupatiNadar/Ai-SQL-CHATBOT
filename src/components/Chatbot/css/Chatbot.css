@@ -1,95 +1,168 @@
+body,
+html,
+#root {
+    height: 100%;
+    margin: 0;
+}
+
 .chatbot-container {
     display: grid;
     grid-template-columns: 2fr 3fr 1fr;
-    gap: 20px;
-    padding: 20px;
+    gap: 16px;
+    padding: 16px;
+    height: 100%;
     background: #f5f7fb;
-    min-height: 90vh;
+    overflow: hidden;
 }
 
+.card,
 .chat-box,
-.center-box .card,
 .history-box {
     background: white;
-    border-radius: 12px;
-    padding: 16px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-h2 {
-    margin-bottom: 4px;
-}
-
-.sub-text {
-    color: #6b7280;
-    font-size: 14px;
-    margin-bottom: 12px;
-}
-
-.chat-box {
+    border-radius: 14px;
+    padding: 14px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    min-height: 0;
+    overflow: hidden;
 }
 
 .chat-message {
+    flex: 1;
+    overflow-y: auto;
     background: #eef2ff;
-    width: auto;
-    height: 90%;
-    padding: 12px;
+    padding: 10px;
     border-radius: 10px;
-    margin: 15px 0;
-    font-size: 14px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background: #2563eb;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-break: break-word;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background: #e5e7eb;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-break: break-word;
 }
 
 .input-box {
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .input-box input {
     flex: 1;
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #ddd;
-    outline: none;
+    border: 1px solid #ccc;
 }
 
-.input-box button {
+button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #2563eb;
     border: none;
-    padding: 10px 14px;
     border-radius: 8px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
-.input-box img {
+button img {
     width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
 .center-box {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
+    min-height: 0;
 }
 
-.placeholder {
-    background: #f9fafb;
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.code-block {
+    background: #111827;
+    color: #22c55e;
+    padding: 12px;
     border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    color: black;
-    font-size: 14px;
+    overflow-x: auto;
+    font-family: monospace;
+    max-height: 120px;
 }
 
-.history-box {
-    height: fit-content;
+.table-wrapper {
+    flex: 1;
+    overflow: auto;
 }
 
-.Connection-database{
-    margin: 20px;
-    background-color: #2563eb;
-    border-radius: 20px;
-    width: auto;
-    min-height: 50px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.history-list {
+    overflow-y: auto;
+    flex: 1;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.sub-text {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+
+.sql-text {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-x: auto;
+    margin: 0;
+    font-family: monospace;
+}
+
+.history-list div {
+    margin-bottom: 8px;
+}
+
+.history-box h2{
+    margin-bottom: 15px;
+}
+
+.history-block{
+background: #2563eb;
+color: white;
+padding: 5px;
+border-radius: 10px;
 }

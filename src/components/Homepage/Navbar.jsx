@@ -28,6 +28,9 @@ const Navbar = () => {
           <li>
             <Link to="/How_it_works"> How it works</Link>
           </li>
+          <li>
+            <Link to="/docs">docs</Link>
+          </li>
           <li className="navbar-chatbot-btn">
             <Link to="/chatbot">chatbot</Link>
           </li>

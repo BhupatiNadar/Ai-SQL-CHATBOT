@@ -12,10 +12,10 @@ const Footer = () => {
             Start querying your databases with natural language today
           </p>
 
-          <button className="footer-btn" type="button">
-            <Link to="/chatbot">Try the Chatbot Now </Link>
+          <Link to="/chatbot" className="footer-btn">
+            Try the Chatbot Now
             <img className="footer-icon" src={arrow_icon} alt="arrow icon" />
-          </button>
+          </Link>
         </div>
       </div>
       <div className="footer-bottom">
