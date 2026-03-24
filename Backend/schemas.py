@@ -7,3 +7,7 @@ class ContactForm(BaseModel):
     
 class Userinput(BaseModel):
     user_input:str
+
+
+class QueryRequest(BaseModel):
+    query: str

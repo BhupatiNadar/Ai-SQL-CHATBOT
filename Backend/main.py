@@ -1,10 +1,11 @@
 from fastapi import FastAPI
-import schemas
-import model
+import schemas,model,database
 from twilio.rest import Client
 import os
 from dotenv import load_dotenv
 from fastapi.middleware.cors import CORSMiddleware
+import dummy_data
+from database import Base,engine
 
 load_dotenv()
 
@@ -28,6 +29,21 @@ client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
 TWILIO_WHATSAPP_NUMBER = "whatsapp:+14155238886"
 YOUR_WHATSAPP_NUMBER = "whatsapp:+918591258371"
+
+@app.on_event("startup")
+def startup():
+    import models
+
+    db_file = "test.db"
+
+    # If DB does NOT exist → create + seed
+    if not os.path.exists(db_file):
+        print("Creating database and inserting dummy data...")
+        Base.metadata.create_all(bind=engine)
+        dummy_data.practice_dummy_data()
+    else:
+        print("Database already exists. Skipping initialization.")
+        
 
 @app.get("/")
 def home():
@@ -55,3 +71,7 @@ Message: {data.message}
 def ChatModel(userinput: schemas.Userinput):
     result = model.chatmodel(user_input=userinput.user_input)
     return {"query": result}
+
+@app.post("/Query")
+def Execute_query(request:schemas.QueryRequest):
+    return  database.execute_raw_sql(query=request.query)
